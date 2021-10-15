@@ -1,0 +1,21 @@
+/*especificidad 001*/
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+/*especificidad 001*/
+img{
+    width: 35ex;
+    height: 45ex;
+}
+
+/*especificidad 001*/
+video{
+    height: 50ex;
+}
+
+
+
+
+
