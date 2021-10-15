@@ -2,6 +2,17 @@
 body{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
+    color: black;
+    background-color: 	#FFA500;
+}
+
+header a{
+    color: inherit;
+}
+
+header a:hover{
+    background-color: black;
+    color: white;
 }
 
 /*especificidad 001*/

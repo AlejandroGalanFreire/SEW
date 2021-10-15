@@ -4,7 +4,7 @@ body{
     display: grid;
     gap: 10px;
     grid-template-columns: auto 300px;
-    grid-template-rows: 100px auto auto 25px;
+    grid-template-rows: 150px auto auto 40px;
     grid-template-areas: 
         "header header"
         "section1 aside"
@@ -16,19 +16,31 @@ body{
 /*Especificidad 001*/
 header{
     grid-area: header;
-    display: grid;
-    grid-template-rows: 100px auto;
-    grid-template-areas:
-    "encabezado"
-    "nav";
+    text-align: center;
 }
 
-header>h1{
-    grid-area: encabezado;
-}
-
+/*Especificidad 002*/
 header>nav{
-    grid-area: nav;
+    display: grid;
+    grid-template-areas: 
+    "enlace1 enlace2 enlace3";
+}
+
+nav>*{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+}
+
+
+nav:nth-child(1){
+    grid-area: enlace1;
+}
+
+nav:nth-child(2){
+    grid-area: enlace2;
+}
+
+nav:nth-child(3){
+    grid-area: enlace3;
 }
 
 /*Este apartado de secciones es especifo para aquellos 
@@ -39,9 +51,15 @@ grid.css padre y que este sea un gridIndex.css*/
 section:first-of-type{
     grid-area: section1;
 }
+
+section>h2{
+    text-align: center;
+}
+
 /*Especificidad 001*/
 section:last-of-type{
     grid-area: section2;
+    text-align: center;
 }
 
 /*Especificidad 001*/
