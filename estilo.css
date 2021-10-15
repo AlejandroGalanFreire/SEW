@@ -6,13 +6,14 @@ body{
 
 /*especificidad 001*/
 img{
-    width: 35ex;
-    height: 45ex;
+    width: 25ex;
+    height: 30ex;
 }
 
 /*especificidad 001*/
 video{
-    height: 50ex;
+    width: 50ex;
+    height: 40ex;
 }
 
 
