@@ -1,0 +1,66 @@
+/*especificidad 001*/
+form{
+    width: 700px;
+    margin: 10px auto;
+    padding: 20px;
+    border: solid 1px black;
+    background-color: #F5CF47;
+    box-shadow: 7px 13px 37px black;
+}
+
+form *{
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: #F5CF47;
+}
+
+input[type="text"]{
+    width: 90%;
+    height: 100px;
+}
+
+input[type="text"]:focus{
+    background-color: white;
+}
+
+input[type="number"]{
+    width: 30%;
+}
+
+input[type="number"]:focus{
+    background-color: white;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+fieldset{
+    width: 90%;
+}
+
+fieldset > label{
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    width: 90%;
+    padding: 20px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #FF6F00;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+

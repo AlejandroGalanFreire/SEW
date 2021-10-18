@@ -1,7 +1,3 @@
-/*Especificidad 001*/
-html{
-    height: 100%;
-}
 
 /*Especificidad 001*/
 body{
@@ -11,11 +7,10 @@ body{
     grid-template-rows: 150px auto auto 40px;
     grid-template-areas: 
         "header header"
-        "section section"
+        "section1 aside"
+        "section2 aside"
         "footer footer";
-    min-height: 100%;
 }
-
 
 
 /*Especificidad 001*/
@@ -31,43 +26,53 @@ header>nav{
     "enlace1 enlace2 enlace3";
 }
 
-/*Especificidad 001*/
 nav>*{
     box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
 }
 
-/*Especificidad 011*/
+
 nav:nth-child(1){
     grid-area: enlace1;
 }
 
-/*Especificidad 011*/
 nav:nth-child(2){
     grid-area: enlace2;
 }
 
-/*Especificidad 011*/
 nav:nth-child(3){
     grid-area: enlace3;
 }
 
+/*Este apartado de secciones es especifo para aquellos 
+documentos que tengan dos secciones y sean ubicadas como en la
+estructura del index. Quizas tengamos que sacar info a un
+grid.css padre y que este sea un gridIndex.css*/
 /*Especificidad 001*/
-section{
-    grid-area: section;
+section:first-of-type{
+    grid-area: section1;
 }
 
-/*Especificidad 002*/
 section>h2{
     text-align: center;
 }
 
+/*Especificidad 001*/
+section:last-of-type{
+    grid-area: section2;
+    text-align: center;
+}
+
+/*Especificidad 001*/
+aside{
+    grid-area: aside;
+}
 
 /*Especificidad 001*/
 footer{
     grid-area: footer;
 }
 
-/*Especificidad 001*/
+/*Especificidad 001
 body > *{
     box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
-}
+}*/

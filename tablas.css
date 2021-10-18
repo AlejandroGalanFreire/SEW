@@ -1,0 +1,22 @@
+/*especificidad 001*/
+table{
+    text-align: left;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 5ex;
+    box-shadow: 7px 13px 37px black;
+}
+
+th, tr, td{
+    background-color: #F5DCB3;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+tr:first-of-type *{
+    background-color: #F5CF47;
+}
+
+
+
+

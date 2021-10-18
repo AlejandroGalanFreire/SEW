@@ -2,12 +2,16 @@
 body{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
-    color: black;
-    background-color: 	#FFA500;
+    background-color: black;
+}
+
+/*Especificidad 001*/
+body *{
+    background-color: #FF6F00;
 }
 
 header a{
-    color: inherit;
+    color: inherit; /*para que herede el color de su padre y no el predefinido para enlaces*/
 }
 
 header a:hover{
@@ -17,13 +21,13 @@ header a:hover{
 
 /*especificidad 001*/
 img{
-    width: 25ex;
+    max-width: 25ex;
     height: 30ex;
 }
 
 /*especificidad 001*/
 video{
-    width: 50ex;
+    max-width: 50ex;
     height: 40ex;
 }
 
