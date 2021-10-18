@@ -44,8 +44,11 @@
             No es posible la reproducción del vídeo  <!-- Mensaje que aparecerá en caso de error a la hora de reproducir el video -->
         </video>
         <p>A continuación añadimos un audio como ejemplo.</p>
-        <audio src="multimedia/tambor-militar.mp3" controls>
-            no va
+        <audio controls>
+             <!--ponemos varios tipos de archivos con el mismo audio para tener alternativas-->
+            <source src= "multimedia/Audio-brendan.mp4" type="audio/mp4" />
+            <source src= "multimedia/Audio-brendan.ogv" type="audio/ogg" />
+            Tu navegador no es compatible con el audio de HTML5.
         </audio>
     </section>
 
