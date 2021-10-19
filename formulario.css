@@ -8,42 +8,51 @@ form{
     box-shadow: 7px 13px 37px black;
 }
 
+/*especificidad 001*/
 form *{
     padding: 10px;
     margin: 10px 10px;
     background-color: #F5CF47;
 }
 
+/*especificidad 011*/
 input[type="text"]{
     width: 90%;
     height: 100px;
 }
 
+/*especificidad 021*/
 input[type="text"]:focus{
     background-color: white;
 }
 
+/*especificidad 011*/
 input[type="number"]{
     width: 30%;
 }
 
+/*especificidad 021*/
 input[type="number"]:focus{
     background-color: white;
 }
 
+/*especificidad 011*/
 input[type="radio"],
 input[type="checkbox"]{
     cursor: pointer;
 }
 
+/*especificidad 001*/
 fieldset{
     width: 90%;
 }
 
+/*especificidad 002*/
 fieldset > label{
     cursor: pointer;
 }
 
+/*especificidad 011*/
 input[type="submit"]{
     width: 90%;
     padding: 20px;
@@ -53,6 +62,7 @@ input[type="submit"]{
     background-color: #FF6F00;
 }
 
+/*especificidad 021*/
 input[type="submit"]:hover{
     background-color: black;
     color: white;

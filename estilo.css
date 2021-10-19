@@ -12,7 +12,7 @@ body *{
 
 /*Especificidad 001*/
 a{
-    color: inherit; /*para que herede el color de su padre y no el predefinido para enlaces*/
+    color: black;
 }
 
 /*Especificidad 012*/
