@@ -8,6 +8,7 @@ body{
 /*Especificidad 001*/
 body *{
     background-color: #FF6F00;
+    color: black;
 }
 
 /*Especificidad 001*/
