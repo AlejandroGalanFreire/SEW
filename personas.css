@@ -1,0 +1,30 @@
+/*especificidad 001*/
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    background-color: black;
+    text-align: center;
+}
+
+/*Especificidad 001*/
+body *{
+    background-color: #FF6F00;
+    color: black;
+}
+
+/*Especificidad 001*/
+a{
+    color: black;
+}
+
+/*especificidad 001*/
+img{
+    max-width: 45ex;
+    height: 50ex;
+}
+
+/*especificidad 001*/
+video{
+    max-width: 50ex;
+    height: 40ex;
+}
