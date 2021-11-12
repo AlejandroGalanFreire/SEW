@@ -27,7 +27,7 @@ form *{
 
 /*Especificidad 001*/
 input{
-    background-color: rgb(126, 123, 123);
+    background-color: rgb(78, 78, 78);
     color: white;
 }
 
@@ -62,4 +62,5 @@ input[value="="]{
 /*Especificidad 001*/
 label{
     display: none;
+    color: white;
 }
