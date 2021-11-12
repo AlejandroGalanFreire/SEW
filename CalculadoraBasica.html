@@ -5,6 +5,7 @@
 <head>
 
     <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
     <title>Ejercicio 3 practica 3</title>
     <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
     <script src="CalculadoraBasica.js"></script>
@@ -13,13 +14,14 @@
 
 <body>
 
-    <h1>Calculadora básica</script></h1>
+    <h1>Calculadora básica</h1>
 
-    <!--Creamos el textArea (simulara a la pantalla) y los botones (simularán las teclas de la calculadora).
+    <!--Creamos el input de texto (simulara a la pantalla) y los botones (simularán las teclas de la calculadora).
     Todo ello en un formulario-->
     <form>
         <!--pantalla-->
-        <input id="pantalla" type="text" disabled>
+        <label for="pantalla">Pantalla</label>
+        <input id="pantalla" type="text" disabled title="pantalla"> <!--title para evitar el error de accesibilidad de ponerle display:none a su label-->
         
         <!--ordenamos los botones segun las filas a las que correspondan filas-->
         <!--fila 1-->
@@ -29,7 +31,7 @@
         <input type="button" name="operacion" value="/" onclick="calculadora.division()">
 
         <!--fila 2-->
-        <input id="boton7" type="button" value="7" onclick="calculadora.digitos('7')">
+        <input type="button" value="7" onclick="calculadora.digitos('7')">
         <input type="button" value="8" onclick="calculadora.digitos('8')">
         <input type="button" value="9" onclick="calculadora.digitos('9')">
         <input type="button" name="operacion" value="*" onclick="calculadora.multiplicacion()">

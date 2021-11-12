@@ -20,6 +20,7 @@ form{
 
 }
 
+/*Especificidad 001*/
 form *{
     border-radius: 10px;
 }
@@ -30,6 +31,7 @@ input{
     color: white;
 }
 
+/*Especificidad 011*/
 input[type="text"]{
     grid-column: 1 / 5;
     grid-row: 1;
@@ -51,7 +53,13 @@ input[name="memoria"]{
     color: white;
 }
 
+/*Especificidad 011*/
 input[value="="]{
     background-color: white;
     color: black;
+}
+
+/*Especificidad 001*/
+label{
+    display: none;
 }
