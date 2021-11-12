@@ -1,0 +1,57 @@
+/*Especificidad 001*/
+body{
+    background-color: #D2B48C;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Especificidad 001*/
+form{
+    display: grid;
+    grid-template-columns: 55px 55px 55px 55px;
+    grid-gap: 10px;
+    background-color: #101926;
+    width: 250px;
+    height: 300px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+form *{
+    border-radius: 10px;
+}
+
+/*Especificidad 001*/
+input{
+    background-color: rgb(126, 123, 123);
+    color: white;
+}
+
+input[type="text"]{
+    grid-column: 1 / 5;
+    grid-row: 1;
+    background-color: rgb(79, 94, 65);
+    padding: 5px;
+    text-align: right;
+    color: black;
+}
+
+/*Especificidad 011*/
+input[name="operacion"]{
+    background-color: red;
+    color: black;
+}
+
+/*Especificidad 011*/
+input[name="memoria"]{
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+
+input[value="="]{
+    background-color: white;
+    color: black;
+}
