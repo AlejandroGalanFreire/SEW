@@ -55,7 +55,6 @@ input[name="memoria"]{
 /*Especificidad 001*/
 label{
     display: none;
-    color: white;
 }
 
 /*Especificidad 011*/
