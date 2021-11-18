@@ -1,0 +1,76 @@
+/*Especificidad 001*/
+body{
+    background-color: #302e2d;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 100px;  
+}
+
+/*Especificidad 001*/
+h1{
+    color: red;
+}
+
+/*Especificidad 001*/
+form{
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px;
+    grid-gap: 10px;
+    background-color: #7c7c7c;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    margin: auto;
+}
+
+/*Especificidad 001*/
+form *{
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*Especificidad 001*/
+input{
+    background-color: rgb(201, 193, 193);
+}
+
+/*Especificidad 011*/
+textarea{
+    grid-column: 1 / 5;
+    grid-row: 1;
+    background-color: #7c7c7c;
+    padding: 5px;
+    text-align: right;
+    font-size: 20px;
+    color: black;
+    border: none;
+}
+
+/*Especificidad 011*/
+input[name="memoria"]{
+    background-color: #7c7c7c;
+}
+
+/*Especificidad 001*/
+label{
+    display: none;
+    color: white;
+}
+
+/*Especificidad 011*/
+input[name="number"]{
+    background-color: white;
+}
+
+/*Especificidad 01*/
+input:hover{
+    background-color: rgb(66, 66, 66);
+    border: black;
+}
+
+/*Especificidad 01*/
+input:active{
+    color: red;
+}

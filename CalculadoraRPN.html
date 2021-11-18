@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <title>Calculadora RPN</title>
+    <link rel="stylesheet" type="text/css" href="Calculadora.css" />
+    <script src="Calculadora.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Calculadora RPN</h1>
+
+    <!--Creamos el input de texto (simulara a la pantalla) y los botones (simularán las teclas de la calculadora).
+    Todo ello en un formulario-->
+    <form>
+        <!--pantalla-->
+        <label for="pantalla">Pantalla</label>
+        <textarea id="pantalla" disabled title="pantalla"></textarea>
+        
+        <!--ordenamos los botones segun las filas a las que correspondan filas-->
+        <!--fila 1 hiperbolicas, boton de grad y bnoton de rad-->
+        
+        <input type="button" value="arcSin" onclick="calculadora.asin()">
+        <input type="button" value="arcCos" onclick="calculadora.acos()">
+        <input type="button" value="arcTan" onclick="calculadora.atan()">
+        <input type="button" value="&#9003" onclick="calculadora.borrar()">
+        
+        <input type="button" value="sin" onclick="calculadora.sin()">
+        <input type="button" value="cos" onclick="calculadora.cos()">
+        <input type="button" value="tan" onclick="calculadora.tan()">
+        <input type="button" value="enter" onclick="calculadora.enter()">
+
+        <input type="button" name="number" value="7" onclick="calculadora.digitos('7')">
+        <input type="button" name="number" value="8" onclick="calculadora.digitos('8')">
+        <input type="button" name="number" value="9" onclick="calculadora.digitos('9')">
+        <input type="button" name="operacion" value="&#247" onclick="calculadora.division()">
+
+        <input type="button" name="number" value="4" onclick="calculadora.digitos('4')">
+        <input type="button" name="number" value="5" onclick="calculadora.digitos('5')">
+        <input type="button" name="number" value="6" onclick="calculadora.digitos('6')">
+        <input type="button" name="operacion" value="x" onclick="calculadora.multiplicacion()">
+
+        <input type="button" name="number" value="1" onclick="calculadora.digitos('1')">
+        <input type="button" name="number" value="2" onclick="calculadora.digitos('2')">
+        <input type="button" name="number" value="3" onclick="calculadora.digitos('3')">
+        <input type="button" name="operacion" value="-" onclick="calculadora.resta()">
+        
+        
+        <input type="button" name="number" value="0" onclick="calculadora.digitos('0')">
+        <input type="button" name="number" value="." onclick="calculadora.punto()">
+        <input type="button" name="operacion" value="+" onclick="calculadora.suma()">
+
+    </form>
+    
+
+</body>
+</html>
