@@ -73,3 +73,7 @@ input:hover{
 input:active{
     color: red;
 }
+
+input[type="submit"]{
+    display: none;
+}
