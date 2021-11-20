@@ -11,6 +11,13 @@ body *{
     padding: 10px;
 }
 
+section{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap: 10px;
+    width: 100%;
+}
+
 /*especificidad 001*/
 table{
     text-align: left;
