@@ -13,8 +13,6 @@ class Meteo {
             url: this.url,
             method: 'GET',
             success: function(datos){
-                
-                    //Presentación de los datos contenidos en JSON
                     
                     var stringDatos = "<table><caption>Datos metereológicos</caption>";
                         stringDatos += "<tr><th>Campo</th><th>Valor</th><th>Unidad</th></tr>"
@@ -63,14 +61,11 @@ class Meteo {
 
     verJSON(ciudad){
         this.setCiudad(ciudad);
-        console.log(this.ciudad)
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
-        console.log(this.url)
         this.eliminarDatosOtraCiudad();
-        this.crearElemento("h2","TIEMPO ATMOSFÉRICO","footer"); // Crea un elemento con DOM 
+        this.crearElemento("h2","TIEMPO ATMOSFÉRICO","footer");
         this.crearElemento("img","","footer");
-        this.crearElemento("p","","footer"); // Crea un elemento con DOM para los datos obtenidos con JSON
-        
+        this.crearElemento("p","","footer");
         this.cargarDatos();
         if(this.ciudad == "Avilés")
             $("#aviles").attr("disabled","disabled");

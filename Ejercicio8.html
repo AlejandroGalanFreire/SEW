@@ -16,13 +16,20 @@
 <body>
     <h1>Datos meteorológicos de distintas ciudades</h1>
 
-    <section>
-        <button id="aviles" onclick="meteo.verJSON('Avilés')">Obtener datos Avilés</button>
-        <button id="abadia" onclick="meteo.verJSON('Abadía')">Obtener datos Abadía</button>
-        <button id="valencia" onclick="meteo.verJSON('Valencia')">Obtener datos Valencia</button>
-        <button id="castañar" onclick="meteo.verJSON('Castañar de Ibor')">Obtener datos Castañar de Ibor</button>
-        <button id="tomelloso" onclick="meteo.verJSON('Tomelloso')">Obtener datos Tomelloso</button>
-    </section>
+    <form>
+        <label for="aviles">Obtener datos Avilés</label>
+        <input type="button" id="aviles" title="aviles" value="Obtener datos Avilés" onclick="meteo.verJSON('Avilés')">
+        <label for="aviles">Obtener datos Abadía</label>
+        <input type="button" id="abadia" title="abadia" value="Obtener datos Abadía" onclick="meteo.verJSON('Abadía')">
+        <label for="aviles">Obtener datos Valencia</label>
+        <input type="button" id="valencia" title="valencia" value="Obtener datos Valencia" onclick="meteo.verJSON('Valencia')">
+        <label for="aviles">Obtener datos Castañar de Ibor</label>
+        <input type="button" id="castañar" title="castañar" value="Obtener datos Castañar de Ibor" onclick="meteo.verJSON('Castañar de Ibor')">
+        <label for="aviles">Obtener datos Tomelloso</label>
+        <input type="button" id="tomelloso" title="tomelloso" value="Obtener datos Tomelloso" onclick="meteo.verJSON('Tomelloso')">
+
+        <input id="submit" type="submit" value="enviar">
+    </form>
     
     <footer>
         
