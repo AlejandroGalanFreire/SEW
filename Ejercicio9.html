@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <title>Datos meteorológicos con XML</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio9.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+
+</head>
+
+<body>
+    <h1>Datos meteorológicos de distintas ciudades</h1>
+
+    <form>
+        <label for="aviles">Obtener datos Avilés</label>
+        <input type="button" id="aviles" title="aviles" value="Obtener datos Avilés" onclick="meteo.verXML('Avilés')">
+        <label for="abadia">Obtener datos Abadía</label>
+        <input type="button" id="abadia" title="abadia" value="Obtener datos Abadía" onclick="meteo.verXML('Abadía')">
+        <label for="valencia">Obtener datos Valencia</label>
+        <input type="button" id="valencia" title="valencia" value="Obtener datos Valencia" onclick="meteo.verXML('Valencia')">
+        <label for="castañar">Obtener datos Castañar de Ibor</label>
+        <input type="button" id="castañar" title="castañar" value="Obtener datos Castañar de Ibor" onclick="meteo.verXML('Castañar de Ibor')">
+        <label for="tomelloso">Obtener datos Tomelloso</label>
+        <input type="button" id="tomelloso" title="tomelloso" value="Obtener datos Tomelloso" onclick="meteo.verXML('Tomelloso')">
+
+        <input id="submit" type="submit" value="enviar">
+    </form>
+    
+    <footer>
+    </footer>
+
+</body>
+</html>
