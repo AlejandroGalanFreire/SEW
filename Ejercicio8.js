@@ -35,7 +35,7 @@ class Meteo {
                         stringDatos += "<tr><td>Visibilidad</td><td>" + datos.visibility + "</td><td>metros</td></tr>";
                         stringDatos += "<tr><td>Nubosidad</td><td>" + datos.clouds.all + "</td><td>%</td></tr></table>";
                     
-                    $("p").html(stringDatos);
+                    $("section").html(stringDatos);
 
                     $("img").attr("src", "http://openweathermap.org/img/wn/" + datos.weather[0].icon + ".png")
                 },
@@ -45,16 +45,11 @@ class Meteo {
                 }
         });
     }
-    crearElemento(tipoElemento, texto, insertarAntesDe){
-        var elemento = document.createElement(tipoElemento); 
-        elemento.innerHTML = texto;
-        $(insertarAntesDe).before(elemento);
-    }
 
     eliminarDatosOtraCiudad(){
         $("h2").remove();
         $("img").remove();
-        $("p").remove();
+        $("section").remove();
         $(":disabled").removeAttr("disabled")
     }
         
@@ -63,9 +58,9 @@ class Meteo {
         this.setCiudad(ciudad);
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
         this.eliminarDatosOtraCiudad();
-        this.crearElemento("h2","TIEMPO ATMOSFÉRICO","footer");
-        this.crearElemento("img","","footer");
-        this.crearElemento("p","","footer");
+        $("footer").before($("<h2></h2>").text("TIEMPO ATMOSFÉRICO"))
+        $("footer").before(document.createElement("img"))
+        $("footer").before(document.createElement("section"))
         this.cargarDatos();
         if(this.ciudad == "Avilés")
             $("#aviles").attr("disabled","disabled");
@@ -75,7 +70,7 @@ class Meteo {
             $("#valencia").attr("disabled","disabled");
         if(this.ciudad == "Castañar de Ibor")
             $("#castañar").attr("disabled","disabled");
-        if(this.ciudad == "Villareal")
+        if(this.ciudad == "Tomelloso")
             $("#tomelloso").attr("disabled","disabled");
 
     }
