@@ -3,6 +3,7 @@ class Calculadora {
     constructor(){
         this.pantalla = ""; // string que acumula las teclas pulsadas
         this.memoria = 0.0; // memoria en la que se almacena un resultado
+        this.solucion = "" // guarda el resultado de una expresion
     }
 
     // METODOS
@@ -59,12 +60,15 @@ class Calculadora {
 
     igual(){
         try{
-            this.pantalla = eval(this.pantalla);
-        }catch(e){
-            console.log(e.getMessage())
+            this.pantalla = this.pantalla.replace("--", "+")
+            this.solucion = eval(this.pantalla) + "";
+            this.pantalla = ""
+            this.ultimoNumero = this.solucion
+        }catch(error){
+            this.solucion = "operación inválida"
         }
         
-        document.getElementById("pantalla").value = this.pantalla;
+        document.getElementById("pantalla").value = this.solucion;
         
     }
 
