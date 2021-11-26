@@ -24,34 +24,69 @@
         <input id="pantalla" type="text" disabled title="pantalla"> <!--title para evitar el error de accesibilidad de ponerle display:none a su label-->
         
         <!--ordenamos los botones segun las filas a las que correspondan filas-->
-        <!--fila 1-->
-        <input type="button" name="memoria" value="mrc" onclick="calculadora.mrc()">
-        <input type="button" name="memoria" value="m+" onclick="calculadora.mMas()">
-        <input type="button" name="memoria" value="m-" onclick="calculadora.mMenos()">
-        <input type="button" name="operacion" value="/" onclick="calculadora.division()">
+        <!--fila 1 hiperbolicas, boton de grad y bnoton de rad-->
+        
+
+        <input type="button" name="memoria" value="MC" onclick="calculadora.mc()" disabled>
+        <input type="button" name="memoria" value="MR" onclick="calculadora.mr()" disabled>
+        <input type="button" name="memoria" value="M+" onclick="calculadora.mMas()">
+        <input type="button" name="memoria" value="M-" onclick="calculadora.mMenos()">
+        <input type="button" name="memoria" value="MS" onclick="calculadora.mrc()">
+        
+        <input type="button" value="grad" onclick="calculadora.grades()" >
+        <input type="button" value="rad" onclick="calculadora.radians()" >
+        <input type="button" value="sinh" onclick="calculadora.sinh()">
+        <input type="button" value="cosh" onclick="calculadora.cosh()">
+        <input type="button" value="tanh" onclick="calculadora.tanh()">
+        
+
+        <input type="button" value="x^2" onclick="calculadora.elevarAlCuadrado()">
+        <input type="button" value="x^y" onclick="calculadora.elevar()">
+        <input type="button" value="sin" onclick="calculadora.sin()">
+        <input type="button" value="cos" onclick="calculadora.cos()">
+        <input type="button" value="tan" onclick="calculadora.tan()">
 
         <!--fila 2-->
+        <input type="button" value="1/x" onclick="calculadora.unoPartidoX()">
+        <input type="button" value="10^x" onclick="calculadora.diezElevadoX()">
+        <input type="button" value="log" onclick="calculadora.log()">
+        <input type="button" value="exp" onclick="calculadora.exp()">
+        <input type="button" value="mod" onclick="calculadora.mod()">
+
+        <!--fila 3-->
+        <input type="button" value="&#8730;" onclick="calculadora.raizCuadrada()">
+        <input type="button" value="e" onclick="calculadora.e()">
+        <input type="button" value="CE" onclick="calculadora.borrarPantallaCompleta()">
+        <input type="button" value="&#9003;" onclick="calculadora.borrar()">
+        <input type="button" name="operacion" value="&#247;" onclick="calculadora.division()"> <!--para incluir codigo ascii usar &#ascii pero solo coge los 127 primeros-->
+
+        
+        <!--fila 2-->
+        <input type="button" value="&#928;" onclick="calculadora.pi()">
         <input type="button" value="7" onclick="calculadora.digitos('7')">
         <input type="button" value="8" onclick="calculadora.digitos('8')">
         <input type="button" value="9" onclick="calculadora.digitos('9')">
-        <input type="button" name="operacion" value="*" onclick="calculadora.multiplicacion()">
+        <input type="button" name="operacion" value="x" onclick="calculadora.multiplicacion()">
 
         <!--fila 3-->
+        <input type="button" value="n!" onclick="calculadora.factorial()">
         <input type="button" value="4" onclick="calculadora.digitos('4')">
         <input type="button" value="5" onclick="calculadora.digitos('5')">
         <input type="button" value="6" onclick="calculadora.digitos('6')">
         <input type="button" name="operacion" value="-" onclick="calculadora.resta()">
 
         <!--fila 4-->
+        <input type="button" value="&#177;" onclick="calculadora.negar()">
         <input type="button" value="1" onclick="calculadora.digitos('1')">
         <input type="button" value="2" onclick="calculadora.digitos('2')">
         <input type="button" value="3" onclick="calculadora.digitos('3')">
         <input type="button" name="operacion" value="+" onclick="calculadora.suma()">
         
         <!--fila 5-->
+        <input type="button" value="(" onclick="calculadora.abrirParentesis()">
+        <input type="button" value=")" onclick="calculadora.cerrarParentesis()">
         <input type="button" value="0" onclick="calculadora.digitos('0')">
-        <input type="button" value="." onclick="calculadora.punto()">
-        <input type="button" value="C" onclick="calculadora.borrar()">
+        <input type="button" value="," onclick="calculadora.punto()">
         <input type="button" value="=" onclick="calculadora.igual()">
 
     </form>
