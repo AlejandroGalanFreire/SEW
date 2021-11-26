@@ -1,0 +1,14 @@
+/*especificamos el estilo para las cabeceras, el fondo del body
+y los párrafos adjuntando la especificidad de cada uno*/
+
+/*Especificad 001*/
+h1, h2, h3, h4, p{
+    color: #A569BD;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Especificad 001*/
+body{
+    background-color: aquamarine;
+    font-family: Helvetica, Arial, sans-serif;
+}
