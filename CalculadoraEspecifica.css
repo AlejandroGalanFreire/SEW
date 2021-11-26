@@ -1,0 +1,76 @@
+/*Especificidad 001*/
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+/*Especificidad 001*/
+h1{
+    color: rgb(48, 48, 233);
+}
+
+/*Especificidad 001*/
+form{
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px;
+    grid-gap: 10px;
+    background-color: #a7a7a7;
+    width: 300px;
+    height: 500px;
+    padding: 30px;
+    margin: auto;
+}
+
+/*Especificidad 001*/
+form *{
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*Especificidad 001*/
+input{
+    background-color: rgb(48, 48, 233);
+    color: white;
+    border: black;
+}
+
+/*Especificidad 011*/
+textarea{
+    resize: none;
+    grid-column: 1 / 5;
+    background-color: #7c7c7c;
+    padding: 5px;
+    text-align: right;
+    font-size: 20px;
+    color: black;
+    border: none;
+    height: 200px;
+}
+
+/*Especificidad 001*/
+label{
+    display: none;
+}
+
+/*Especificidad 011*/
+input[name="number"]{
+    background-color: rgb(76, 76, 192);
+}
+
+/*Especificidad 01*/
+input:hover{
+    background-color: rgb(66, 66, 66);
+    border: black;
+}
+
+/*Especificidad 01*/
+input:active{
+    color: red;
+}
+
+input[type="submit"]{
+    display: none;
+}
