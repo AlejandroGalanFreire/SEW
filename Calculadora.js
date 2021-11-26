@@ -148,7 +148,11 @@ class Calculadora{
         document.getElementById("pantalla").value = this.pantalla;
     }
 
-
+    resetearPila(){
+        this.pila = [];
+        this.limpiarPantalla();
+        this.pintarPila();
+    }
 }
 
 var calculadora = new Calculadora();
