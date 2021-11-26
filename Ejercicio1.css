@@ -1,14 +1,23 @@
-/*especificamos el estilo para las cabeceras, el fondo del body
-y los párrafos adjuntando la especificidad de cada uno*/
-
-/*Especificad 001*/
-h1, h2, h3, h4, p{
-    color: #A569BD;
+/*especificidad 001*/
+body{
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    background-color: rgb(120, 206, 120);
 }
 
-/*Especificad 001*/
-body{
-    background-color: aquamarine;
-    font-family: Helvetica, Arial, sans-serif;
+/*especificidad 001*/
+body *{
+    padding: 10px;
+}
+
+/*especificidad 001*/
+h2{
+    font-style: italic;
+}
+
+/*especificidad 011*/
+input[type="file"]{
+    background-color: #F5CF47;
+    border: black;
+    border-radius: 12px;
 }
