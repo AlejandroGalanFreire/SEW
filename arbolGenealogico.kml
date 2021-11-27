@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><Placemark><name>Nacimiento de Mario Lada Martinez</name><Point>
+<coordinates>-5.84476,43.3603,238</coordinates></Point></Placemark><Placemark><name>Nacimiento de Mario Lada Rodriguez</name><Point>
+<coordinates>-5.7762,43.2518,209</coordinates></Point></Placemark><Placemark><name>Nacimiento de Martin Lada</name><Point>
+<coordinates>-5.7962,42.2518,209</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Martin Lada</name><Point>
+<coordinates>-6.2833,43.3400,120</coordinates></Point></Placemark><Placemark><name>Nacimiento de Rodrigo Lada</name><Point>
+<coordinates>-5.7862,43.2618,203</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Rodrigo Lada</name><Point>
+<coordinates>-5.7462,43.2718,203</coordinates></Point></Placemark><Placemark><name>Nacimiento de Carmen Jove</name><Point>
+<coordinates>-4.7662,43.3618,209</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Carmen Jove</name><Point>
+<coordinates>-4.5462,43.2118,209</coordinates></Point></Placemark><Placemark><name>Nacimiento de Josefina Rodriguez</name><Point>
+<coordinates>-5.7762,43.2518,209</coordinates></Point></Placemark><Placemark><name>Nacimiento de Luis Manuel Alvarez</name><Point>
+<coordinates>-5.7462,43.2418,203</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Luis Manuel Alvarez</name><Point>
+<coordinates>-3.67,40.5,660</coordinates></Point></Placemark><Placemark><name>Nacimiento de Maria Teresa Cuetara</name><Point>
+<coordinates>-6.238,43.5747,143</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Maria Teresa Cuetara</name><Point>
+<coordinates>-5.7762,43.2518,209</coordinates></Point></Placemark><Placemark><name>Nacimiento de Belen Martinez Almanza</name><Point>
+<coordinates>-5.9091,42.2975,779</coordinates></Point></Placemark><Placemark><name>Nacimiento de Manuel Martinez</name><Point>
+<coordinates>-6.0735,42.1928,845</coordinates></Point></Placemark><Placemark><name>Nacimiento de Fernando Martinez</name><Point>
+<coordinates>-6.0735,42.1928,845</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Fernando Martinez</name><Point>
+<coordinates>-6.0735,42.1928,845</coordinates></Point></Placemark><Placemark><name>Nacimiento de Maria del Rosario Turrado</name><Point>
+<coordinates>-6.0865,42.1925,853</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Maria del Rosario Turrado</name><Point>
+<coordinates>-6.0865,42.1925,853</coordinates></Point></Placemark><Placemark><name>Nacimiento de Guadalupe Almanza</name><Point>
+<coordinates>-6.0865,42.1925,853</coordinates></Point></Placemark><Placemark><name>Nacimiento de Fernando Almanza</name><Point>
+<coordinates>-6.0865,42.2025,853</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Fernando Almanza</name><Point>
+<coordinates>-6.1865,42.2225,853</coordinates></Point></Placemark><Placemark><name>Nacimiento de Rosa Turrado</name><Point>
+<coordinates>-5.3719,42.538,820</coordinates></Point></Placemark><Placemark><name>Fallecimiento de Rosa Turrado</name><Point>
+<coordinates>-6.1265,42.235,853</coordinates></Point></Placemark> </Document></kml>
