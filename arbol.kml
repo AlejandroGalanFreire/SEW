@@ -2,20 +2,20 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
+<Placemark><name>Nacimiento Alejandro</name><description>San Agustín</description><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
+<Placemark><name>Nacimiento Esperanza</name><description>Hospital de la Merced</description><Point><coordinates>-5.9780763,40.259378,22.2</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
-<Placemark><Point><coordinates>-5.9780763,40.259378,22.2</coordinates></Point></Placemark>
-<Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
-<Placemark><Point><coordinates>-5.4844477,39.7840287,22.2</coordinates></Point></Placemark>
-<Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
-<Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
-<Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
+<Placemark><name>Nacimiento Águeda</name><description>Hospital Campo Arañuelo</description><Point><coordinates>-5.4844477,39.7840287,22.2</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
-<Placemark><Point><coordinates>-0.3444209,39.4768488,43.5 </coordinates></Point></Placemark>
+<Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
+<Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
+<Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
+<Placemark><Point><name>Nacimiento Manuel</name><description>Hospital Universitario y Politécino la fe</description><coordinates>-0.3444209,39.4768488,43.5 </coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
 <Placemark><Point><coordinates>-5.9361,43.5519,1.77</coordinates></Point></Placemark>
