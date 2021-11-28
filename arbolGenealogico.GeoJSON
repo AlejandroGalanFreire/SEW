@@ -1,0 +1,16 @@
+{
+    "type": "geojson",
+    "data": {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [-5.9361, 43.5519],
+                [-5.9780763, 40.259378],
+                [-5.4844477, 39.7840287],
+                [-0.3444209, 39.4768488]
+            ]
+        }
+    }
+}
