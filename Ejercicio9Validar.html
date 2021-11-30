@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)file:///D:/CARRERA/3%C2%BACARRERA/SEW/LABORATORIO/practica%20javascript/PRACTICA%203/PRACTICA-3/Ejercicio-09/Ejercicio9.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Datos meteorológicos con XML</title>
+    <link rel="stylesheet" type="text/css" href="./Ejercicio9Validar_files/Ejercicio9.css">
+    <script src="./Ejercicio9Validar_files/jquery.min.js.descarga"></script>
+    <script src="./Ejercicio9Validar_files/Ejercicio9.js.descarga"></script>
+
+</head>
+
+<body>
+    <h1>Datos meteorológicos de distintas ciudades</h1>
+
+    <form>
+        <label for="aviles">Obtener datos Avilés</label>
+        <input type="button" id="aviles" title="aviles" value="Obtener datos Avilés" onclick="meteo.verXML(&#39;Avilés&#39;)">
+        <label for="abadia">Obtener datos Abadía</label>
+        <input type="button" id="abadia" title="abadia" value="Obtener datos Abadía" onclick="meteo.verXML(&#39;Abadía&#39;)">
+        <label for="valencia">Obtener datos Valencia</label>
+        <input type="button" id="valencia" title="valencia" value="Obtener datos Valencia" onclick="meteo.verXML(&#39;Valencia&#39;)">
+        <label for="castañar">Obtener datos Castañar de Ibor</label>
+        <input type="button" id="castañar" title="castañar" value="Obtener datos Castañar de Ibor" onclick="meteo.verXML(&#39;Castañar de Ibor&#39;)">
+        <label for="tomelloso">Obtener datos Tomelloso</label>
+        <input type="button" id="tomelloso" title="tomelloso" value="Obtener datos Tomelloso" onclick="meteo.verXML(&#39;Tomelloso&#39;)" disabled="disabled">
+
+        <input id="submit" type="submit" value="enviar">
+    </form>
+    
+    <h2>TIEMPO ATMOSFÉRICO</h2><img src="./Ejercicio9Validar_files/02d.png"><section><table><caption>Datos metereológicos</caption><tbody><tr><th>Campo</th><th>Valor</th><th>Unidad</th></tr><tr><td>Ciudad</td><td>Tomelloso</td><td>--</td></tr><tr><td>País</td><td>ES</td><td>--</td></tr><tr><td>Latitud</td><td>39.1522</td><td>grados</td></tr><tr><td>Longitud</td><td>-3.0243</td><td>grados</td></tr><tr><td>Temperatura</td><td>6.95</td><td>grados Celsius</td></tr><tr><td>Temperatura máxima</td><td>6.95</td><td>grados Celsius</td></tr><tr><td>Temperatura mí­nima</td><td>5.73</td><td>grados Celsius</td></tr><tr><td>Presión</td><td>1028</td><td>hPa</td></tr><tr><td>Humedad</td><td>76</td><td>%</td></tr><tr><td>Amanece a las</td><td>8:11:40</td><td>--</td></tr><tr><td>Oscurece a las</td><td>17:50:20</td><td>--</td></tr><tr><td>Nombre del viento</td><td>Calm</td><td>grados</td></tr><tr><td>Dirección del viento</td><td>216</td><td>grados</td></tr><tr><td>Nombre de la dirección del viento</td><td>Southwest</td><td>grados</td></tr><tr><td>Velocidad del viento</td><td>0.83</td><td>metros/segundo</td></tr><tr><td>Código del viento</td><td>SW</td><td>grados</td></tr><tr><td>Hora de la medida</td><td>10:23:14</td><td>--</td></tr><tr><td>Fecha de la medida</td><td>30/11/2021</td><td>--</td></tr><tr><td>Descripción</td><td>algo de nubes</td><td>--</td></tr><tr><td>Visibilidad</td><td>10000</td><td>metros</td></tr><tr><td>Nombre nubosidad</td><td>few clouds</td><td>--</td></tr><tr><td>Nubosidad</td><td>19</td><td>%</td></tr></tbody></table></section><footer>
+    </footer>
+
+
+</body></html>
