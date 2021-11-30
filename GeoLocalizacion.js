@@ -1,6 +1,6 @@
 class GeoLocalizacion{
     constructor(){
-        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this));
+        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.manejarErrores.bind(this));
     }
 
     getPosicion(posicion){
@@ -26,6 +26,23 @@ class GeoLocalizacion{
 
         $("section").append(stringDatos);
         $("input").attr("disabled", "disabled");
+    }
+
+    manejarErrores(error){
+        switch(error.code){
+            case error.PERMISSION_DENIED:
+                this.mensaje = "El usuario no quiere que su posición sea conocida."
+                break;
+            case error.POSITION_UNVAILABLE:
+                this.mensaje = "La posición del usuario no está disponible."
+                break;
+            case error.TIMEOUT:
+                this.mensaje = "La petición ha caducado."
+                break;
+            case error.UNKNOWN_ERROR:
+                this.mensaje = "Error desconocido."
+                break;
+        }
     }
 }
 
