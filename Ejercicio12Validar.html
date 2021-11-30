@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)file:///D:/CARRERA/3%C2%BACARRERA/SEW/LABORATORIO/practica%20javascript/PRACTICA%203/PRACTICA-3_ENTREGA/Ejercicio-12/Ejercicio12.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>API File</title>
+    <link rel="stylesheet" type="text/css" href="./Ejercicio12Validar_files/Ejercicio12.css">
+    <script src="./Ejercicio12Validar_files/jquery.min.js.descarga"></script>
+    <script src="./Ejercicio12Validar_files/Ejercicio12.js.descarga"></script>
+
+</head>
+
+<body>
+    <h1>Propiedades de archivos TXT, XML y JSON</h1>
+
+    <!--Aquí irán párrafos que se añadiran desde js para mostrar propiedades y contenido del archivo seleccionado desde la máquina-->
+    <h2>Seleccione archivos de formato TXT, XML o JSON: </h2>
+    <form>
+        <label for="archivoTexto">archivo seleccionado</label>
+        <input type="file" id="archivoTexto" onchange="procesarArchivo.obtenerPropiedadesArchivo(this.files);">
+        <input id="submit" type="submit" value="enviar">
+    </form>
+    
+    <p>Nombre del archivo: Ejemplo.txt</p><p>Tamaño del archivo: 82 bytes</p><p>Tipo del archivo: text/plain</p><p>Fecha de la última modificación: Wed Nov 24 2021 22:19:48 GMT+0100 (hora estándar de Europa central)</p><pre>Archivo de texto<br>para probar el ejercicio 12.<br>Se tiene que mostrar el contenido.</pre>
+    
+    <footer>
+        
+    </footer>
+
+
+</body></html>
