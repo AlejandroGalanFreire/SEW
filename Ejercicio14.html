@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Ejercicio 14</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio14.js"></script>
+
+</head>
+
+<body>
+    <h1>Almacenando información en una base de datos</h1>
+
+    <h2>Descripción</h2>
+    <p>
+        Esta aplicación consiste en que al seleccionar un archivo de texto desde nuestra máquina cliente,
+        el contenido del mismo se almacenará en una base de datos y se mostrará la información
+        que alberga la misma en un recuadro, usando la API File y la Api IndexerDb. Ademas disponemos de un 
+        botón que nos permite poner la página web en pantalla completa.
+    </p>
+
+    <h2>Seleccione archivos de formato TXT: </h2>
+
+    <form>
+
+        <label for="archivoTexto">archivo seleccionado</label>
+        <input type="file" id="archivoTexto" onchange="procesador.obtenerPropiedadesArchivo(this.files);">
+        <input type="button" value="pantalla completa" onclick="fullScreen.enterFullScreenMode();">
+
+        <input id="submit" type="submit" value="enviar">
+    </form>
+
+    <h3>Información en base de datos:</h3>
+    <pre>
+        <!--Para mostrar el contenido leido de la base de datos-->
+    </pre>
+
+    <footer>
+        <p>A continuación se aporta el correo del autor del documento:
+            <a href="mailto:UO277346@uniovi.es">Alejandro Galán</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
