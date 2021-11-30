@@ -14,10 +14,10 @@ body *{
 /*especificidad 001*/
 form{
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 500px 500px;
     grid-gap: 10px;
     width: 100%;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 
 /*Especificidad 001*/
@@ -80,4 +80,9 @@ input[type="submit"]{
 /*especificidad 001*/
 label{
     display: none;
+}
+
+pre{
+    border: black 5px solid;
+    border-radius: 20px;
 }
