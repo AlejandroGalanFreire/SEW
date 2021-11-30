@@ -14,14 +14,6 @@ function ocultarPrimerParrafo(){
     $("p:first").hide();
 }
 
-function mostrarUltimoParrafo(){
-    $("p:last").show();
-}
-
-function ocultarUltimoParrafo(){
-    $("p:last").hide();
-}
-
 
 function modificarTextoParrafoImpares(){
     $("p:odd").text("Texto de los parrafos pares modificado")
@@ -31,9 +23,9 @@ function modificarFondoTabla(){
     $("th, tr, td").css({backgroundColor: 'rgb(202, 87, 87)'});
 }
 
-function añadirEncabezado(){
+function añadirParrafo(){
     // creamos elemento con JQuery y lo añadimos despues de los h3 existentes
-    var contenidoEncabezado = $("<h3></h3>").text("NUEVO ENCABEZADO AÑADIDO DESDE JQUERY")
+    var contenidoEncabezado = $("<p></p>").text("Nuevo párrafo añadido desde JQuery.")
     $("h3").after(contenidoEncabezado)
 }
 
@@ -45,10 +37,11 @@ function infoDeTodosLosElementos(){
     // nos dice el elemento padre de cada elemento (con parent) y el tipo de elemento que es
     $("*", document.body).each(
         function(){
+            var elemento = this;
             var elementoPadre = $(this).parent().get(0).tagName;
             var tipoElemento = $(this).attr("Type");
-            $(this).after(document.createTextNode("Elemento padre: " + elementoPadre + ". Tipo de elemento: " +
-            tipoElemento));
+            $("table").after("<p>Elemento: " + elemento + ". Elemento padre: " + elementoPadre 
+            + ". Tipo de elemento: " + tipoElemento+"</p>");
         }
     )
 }
@@ -77,5 +70,5 @@ function sumarCeldasYColumnasTabla(){
     );
 
     var contenidoParrafo = $("<p></p>").text("Número filas: " + numeroFilas + ", número columnas: " + numeroColumnas);
-    $("table").after(contenidoParrafo)
+    $("table").before(contenidoParrafo)
 }
