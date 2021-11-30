@@ -1,7 +1,7 @@
 /*especificidad 001*/
 body{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
     background-color: rgb(120, 206, 120);
 }
@@ -23,7 +23,6 @@ form{
 /*Especificidad 001*/
 form *{
     border: none;
-    font-size: 15px;
     font-weight: bold;
     background-color: #F5DCB3;
 }
@@ -39,7 +38,7 @@ table{
 
 /*especificidad 001*/
 caption{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -79,7 +78,7 @@ input[type="submit"]{
 
 /*especificidad 011*/
 input[type="button"]{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /*especificidad 001*/
