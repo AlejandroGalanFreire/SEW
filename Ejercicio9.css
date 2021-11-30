@@ -1,7 +1,7 @@
 /*especificidad 001*/
 body{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
     background-color: rgb(120, 206, 120);
 }
@@ -14,12 +14,11 @@ body *{
 /*especificidad 001*/
 form{
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-columns: 300px 300px 300px;
     grid-gap: 10px;
     width: 100%;
-    margin-left: 100px;
+    margin-left: 200px;
 }
-
 
 /*especificidad 001*/
 table{
@@ -28,12 +27,6 @@ table{
     width: 90%;
     margin: auto;
     box-shadow: 7px 13px 37px black;
-}
-
-/*especificidad 001*/
-caption{
-    font-size: 20px;
-    font-weight: bold;
 }
 
 /*especificidad 001*/
@@ -68,6 +61,11 @@ img{
 /*especificidad 011*/
 input[type="submit"]{
     display: none;
+}
+
+/*especificidad 011*/
+input[type="button"]{
+    font-size: 20px;
 }
 
 /*especificidad 001*/
