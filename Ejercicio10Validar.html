@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0125)file:///D:/CARRERA/3%C2%BACARRERA/SEW/LABORATORIO/practica%20javascript/PRACTICA%203/PRACTICA-3/Ejercicio-10/Ejercicio10.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Precios del petróleo con Commodities-API</title>
+    <link rel="stylesheet" type="text/css" href="./Ejercicio10Validar_files/Ejercicio10.css">
+    <script src="./Ejercicio10Validar_files/jquery.min.js.descarga"></script>
+    <script src="./Ejercicio10Validar_files/Ejercicio10.js.descarga"></script>
+
+</head>
+
+<body>
+    <h1>Precios del petróleo</h1>
+
+    <form>
+        <label for="obtenerPrecios">Obtener precios</label>
+        <input id="obtenerPrecios" type="button" title="boton" value="Obtener precios" onclick="preciosPetroleo.verJSON()" disabled="disabled">
+
+        <input id="submit" type="submit" value="enviar">
+    </form>
+
+    <h2>La solicitud se ha realizado con éxito</h2><h3>Datos a procesar</h3><pre>{
+  "data": {
+    "success": true,
+    "fluctuation": true,
+    "start_date": "2021-11-21",
+    "end_date": "2021-11-26",
+    "base": "USD",
+    "rates": {
+      "EUR": {
+        "start_rate": 0.886504,
+        "end_rate": 0.883504,
+        "change": 0.0030000000000000027,
+        "change_pct": 0.3384079485258953
+      },
+      "GBP": {
+        "start_rate": 0.743771,
+        "end_rate": 0.749364,
+        "change": 0.00559300000000007,
+        "change_pct": 0.7519787676583344
+      },
+      "JPY": {
+        "start_rate": 114.1074170496,
+        "end_rate": 113.2874870904,
+        "change": 0.819929959199996,
+        "change_pct": 0.7185597399366164
+      },
+      "USD": {
+        "start_rate": 1,
+        "end_rate": 1,
+        "change": 0,
+        "change_pct": 0
+      }
+    }
+  }
+}</pre><p>Estos datos toman como base la moneda 'USD'</p>
+    <p>
+        La tabla muestra la variación que se produce con respecto a las monedas 'EUR', 'JPY' y 'GBP' en el intervalo de días 
+        entre el 21-11-2021 y el 26-11-2021
+    </p>
+    
+    <section><table><caption>Precios por barril de petróleo</caption><tbody><tr><th>Campo</th><th>EUR</th><th>JPY</th><th>GBP</th></tr><tr><td>Tarifa inicial</td><td>0.886504</td><td>114.1074170496</td><td>0.743771</td></tr><tr><td>Tarifa final</td><td>0.883504</td><td>113.2874870904</td><td>0.749364</td></tr><tr><td>Variación de la tarifa</td><td>0.0030000000000000027</td><td>0.819929959199996</td><td>0.00559300000000007</td></tr><tr><td>Variación %</td><td>0.3384079485258953</td><td>0.7185597399366164</td><td>0.7519787676583344</td></tr></tbody></table></section><footer>
+        <p>A continuación se aporta el correo del autor del documento:
+            <a href="mailto:UO277346@uniovi.es">Alejandro Galán</a>
+        </p>
+    </footer>
+
+
+</body></html>
