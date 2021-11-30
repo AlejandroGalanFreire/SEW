@@ -59,6 +59,11 @@ input[type="submit"]{
     display: none;
 }
 
+/*especificidad 011*/
+input[type="button"]{
+    border-radius: 20px;
+}
+
 /*especificidad 001*/
 label{
     display: none;
