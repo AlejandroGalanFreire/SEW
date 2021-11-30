@@ -1,7 +1,7 @@
 /*especificidad 001*/
 body{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     background-color: rgb(120, 206, 120);
 }
@@ -15,7 +15,7 @@ body *{
 form{
     display: grid;
     grid-template-columns: 500px 500px;
-    grid-gap: 10px;
+    grid-gap: 20px;
     width: 100%;
     margin-left: 250px;
 }
