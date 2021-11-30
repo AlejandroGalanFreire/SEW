@@ -15,7 +15,7 @@ body *{
 form{
     display: grid;
     grid-template-columns: 500px 500px;
-    grid-gap: 20px;
+    grid-gap: 50px;
     width: 100%;
     margin-left: 250px;
 }
@@ -77,11 +77,17 @@ input[type="submit"]{
     display: none;
 }
 
+/*especificidad 011*/
+input[type="button"]{
+    font-size: 20px;
+}
+
 /*especificidad 001*/
 label{
     display: none;
 }
 
+/*especificidad 001*/
 pre{
     border: black 5px solid;
     border-radius: 20px;

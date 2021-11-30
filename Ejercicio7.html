@@ -23,26 +23,20 @@
     <p>tercer párrafo el cual vamos a poder ocultar y mostrar</p>
     <h3>TERCER ENCABEZADO DUPLICADO</h3>
     
-    
-    
-    
-
     <form>
-        <input type="button" value="mostrar todos los parrafos" onclick="mostrarParrafos()">
-        <input type="button" value="ocultar todos los parrafos" onclick="ocultarParrafos()">
-        <input type="button" value="mostrar primer parrafo" onclick="mostrarPrimerParrafo()">
-        <input type="button" value="ocultar primer parrafo" onclick="ocultarPrimerParrafo()">
-        <input type="button" value="modifica el texto del segundo parrafo" onclick="modificarTextoParrafoImpares()">
-        <input type="button" value="modifica fondo de tabla" onclick="modificarFondoTabla()">
-        <input type="button" value="añadir parrafo tras h3" onclick="añadirParrafo()">
-        <input type="button" value="eliminar encabezado h3 pares" onclick="eliminarEncabezadosH3Pares()">
-        <input type="button" value="obtener info de elementos" onclick="infoDeTodosLosElementos()">
-        <input type="button" value="suma de filas y columnas" onclick="sumarCeldasYColumnasTabla()">
+        <input type="button" value="mostrar todos los parrafos" onclick="operacion.mostrarParrafos()">
+        <input type="button" value="ocultar todos los parrafos" onclick="operacion.ocultarParrafos()">
+        <input type="button" value="mostrar primer parrafo" onclick="operacion.mostrarPrimerParrafo()">
+        <input type="button" value="ocultar primer parrafo" onclick="operacion.ocultarPrimerParrafo()">
+        <input type="button" value="modifica el texto de los parrafos pares" onclick="operacion.modificarTextoParrafoImpares()">
+        <input type="button" value="añadir parrafo tras h3" onclick="operacion.añadirParrafo()">
+        <input type="button" value="eliminar encabezado h3 pares" onclick="operacion.eliminarEncabezadosH3Pares()">
+        <input type="button" value="obtener info de elementos" onclick="operacion.infoDeTodosLosElementos()">
+        <input type="button" value="suma de filas y columnas" onclick="operacion.sumarCeldasYColumnasTabla()">
 
         <input id="submit" type="submit" value="enviar">
     </form>
     
-
     <table>
         <caption>Tabla para probar</caption>
         <tr>
@@ -52,49 +46,49 @@
         </tr>
 
         <tr>
-            <td>1986</th>
+            <td>1986</td>
             <td>En la universidad de Illinois en Urbana-Champaign</td>
             <td>Recibió su maestría</td>
         </tr>
             
         <tr>
-            <td>1986-1993</th>
+            <td>1986-1993</td>
             <td>En Silicon Graphics</td>
             <td>Trabajó desarrollando el sistema operativo y código de la red</td>
         </tr>
 
         <tr>
-            <td>1993-1996</th>
+            <td>1993-1996</td>
             <td>En MicroUnity Systems Engineering</td>
             <td>Trabajó escribiendo el micronúcleo y el código de DSP, y en hacer el primer port de GCC para la MIPS R4000</td>
         </tr>
             
         <tr>
-            <td>1995</th>
+            <td>1995</td>
             <td>En Netscape Communications Corporation</td>
             <td>Desarrollo JavaScript para el navegador Netscape Navigator</td>
         </tr>
 
         <tr>
-            <td>1998</th>
+            <td>1998</td>
             <td>Fundación Mozilla</td>
             <td>Ayudó a fundarla sirviendo como principal arquitecto.</td>
         </tr>
 
         <tr>
-            <td>2003</th>
+            <td>2003</td>
             <td>Fundación Mozilla</td>
             <td>La unidad del navegador Netscape cerró y Eich ayudó a hacer girar a la Fundación Mozilla</td>
         </tr>
 
         <tr>
-            <td>2014</th>
+            <td>2014</td>
             <td>Corporación Mozilla</td>
             <td>Fue ascendido a CEO. Ese mismo año dimitió y abandonó la organización</td>
         </tr>
 
         <tr>
-            <td>2015</th>
+            <td>2015</td>
             <td>En Brave</td>
             <td>Se convirtió en el CEO</td>
         </tr>
