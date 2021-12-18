@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<!-- saved from url=(0070)http://localhost/PRACTICA-4_version2/Ejercicio-1/CalculadoraBasica.php -->
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+<!DOCTYPE HTML>
+
+<html lang='es'>
+
+<head>
+    <meta charset='UTF-8'/>
+    <meta name ='viewport' content ='width=device-width, initial scale=1.0' />
     <title>Calculadora basica</title>
-    <link rel="stylesheet" type="text/css" href="./CalculadoraBasicaPHP_files/CalculadoraBasica.css">
+    <link rel='stylesheet' type='text/css' href='CalculadoraBasica.css' />
 </head>
 
 <body>
@@ -12,41 +15,42 @@
 
     <!--Creamos el input de texto (simulara a la pantalla) y los botones (simularán las teclas de la calculadora).
     Todo ello en un formulario-->
-    <form action="http://localhost/PRACTICA-4_version2/Ejercicio-1/CalculadoraBasica.php#" method="post">
+    <form action='#' method='post'>
         <!--pantalla-->
-        <input type="text" disabled="" name="expresion" value="0">
+        <label for='texto'>pantalla</label>
+        <input type='text' id='texto' disabled name='expresion' value='0'>
         
         <!--ordenamos los botones segun las filas a las que correspondan filas-->
         <!--fila 1-->
-        <input type="submit" name="mrc" value="mrc">
-        <input type="submit" name="mMas" value="m+">
-        <input type="submit" name="mMenos" value="m-">
-        <input type="submit" name="division" value="/">
+        <input type='submit' name='mrc' value='mrc'>
+        <input type='submit' name='mMas' value='m+'>
+        <input type='submit' name='mMenos' value='m-'>
+        <input type='submit' name='division' value='/'>
 
         <!--fila 2-->
-        <input type="submit" name="7" value="7">
-        <input type="submit" name="8" value="8">
-        <input type="submit" name="9" value="9">
-        <input type="submit" name="multiplicacion" value="*">
+        <input type='submit' name='7' value='7'>
+        <input type='submit' name='8' value='8'>
+        <input type='submit' name='9' value='9'>
+        <input type='submit' name='multiplicacion' value='*'>
 
         <!--fila 3-->
-        <input type="submit" name="4" value="4">
-        <input type="submit" name="5" value="5">
-        <input type="submit" name="6" value="6">
-        <input type="submit" name="resta" value="-">
+        <input type='submit' name='4' value='4'>
+        <input type='submit' name='5' value='5'>
+        <input type='submit' name='6' value='6'>
+        <input type='submit' name='resta' value='-'>
 
         <!--fila 4-->
-        <input type="submit" name="1" value="1">
-        <input type="submit" name="2" value="2">
-        <input type="submit" name="3" value="3">
-        <input type="submit" name="suma" value="+">
+        <input type='submit' name='1' value='1'>
+        <input type='submit' name='2' value='2'>
+        <input type='submit' name='3' value='3'>
+        <input type='submit' name='suma' value='+'>
         
         <!--fila 5-->
-        <input type="submit" name="0" value="0">
-        <input type="submit" name="punto" value=".">
-        <input type="submit" name="borrar" value="C">
-        <input type="submit" name="igual" value="=">
+        <input type='submit' name='0' value='0'>
+        <input type='submit' name='punto' value='.'>
+        <input type='submit' name='borrar' value='C'>
+        <input type='submit' name='igual' value='='>
 
     </form>
-
-</body></html>
+</body>
+</html>
