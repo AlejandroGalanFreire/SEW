@@ -41,13 +41,13 @@ input[type="text"]{
 }
 
 /*Especificidad 011*/
-input[name="operacion"]{
+input[name="suma"], input[name="resta"], input[name="multiplicacion"], input[name="division"]{
     background-color: red;
     color: black;
 }
 
 /*Especificidad 011*/
-input[name="memoria"]{
+input[name="mrc"], input[name="mMas"], input[name="mMenos"]{
     background-color: rgb(39, 38, 38);
     color: white;
 }
@@ -58,8 +58,6 @@ input[value="="]{
     color: black;
 }
 
-/*Especificidad 001*/
 label{
     display: none;
-    color: white;
 }

@@ -37,7 +37,7 @@ input{
     border: black;
 }
 
-/*Especificidad 011*/
+/*Especificidad 002*/
 textarea{
     resize: none;
     grid-column: 1 / 5;
@@ -50,6 +50,7 @@ textarea{
     height: 200px;
 }
 
+
 /*Especificidad 001*/
 label{
     display: none;
@@ -60,18 +61,13 @@ input[name="number"]{
     background-color: rgb(76, 76, 192);
 }
 
-/*Especificidad 011*/
+/*Especificidad 01*/
 input:hover{
     background-color: rgb(66, 66, 66);
     border: black;
 }
 
-/*Especificidad 011*/
+/*Especificidad 01*/
 input:active{
     color: red;
-}
-
-/*Especificidad 011*/
-input[type="submit"]{
-    display: none;
 }
